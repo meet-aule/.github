@@ -1,27 +1,51 @@
-## Capricorn · the open-source AI tutor for kids
+# Aule
+
+**An open-source AI tutor for children, made in Lima, Peru.**
+
+Aule combines voice tutoring, exercises and a model of what each student knows.
+Families can use the browser tutor today. We are also developing a dedicated
+e-ink device and its firmware; the mobile family app is planned.
+
+## Start here
+
+- **Use Aule:** [open the browser tutor](https://playground.meetaule.com/session/) or [learn about the product](https://meetaule.com).
+- **Run your own tutor:** follow the [server setup](https://github.com/meet-aule/aule-sw#running-it-yourself).
+- **Build or contribute to the device:** start with the [hardware guide](https://github.com/meet-aule/aule-hw#readme) and [firmware guide](https://github.com/meet-aule/aule-fw#readme).
+
+## Repositories
+
+| Repository | Purpose | Status |
+|---|---|---|
+| [aule-sw](https://github.com/meet-aule/aule-sw) | Voice tutor, browser interface, family and device APIs, learning model and operations | Implemented; active development |
+| [aule-hw](https://github.com/meet-aule/aule-hw) | ESP32-S3 board, e-ink display, audio, microphone mute and printable dock | Hardware prototype |
+| [aule-fw](https://github.com/meet-aule/aule-fw) | Firmware based on [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32), board support and device integration | In development |
+| [aule-app](https://github.com/meet-aule/aule-app) | Mobile family app for device setup, progress and privacy controls | Planned |
+
+Each repository's README describes its setup, implemented features and validation
+limits. Hardware bring-up and full device integration still need validation.
+
+## Device design
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/meet-aule/capricorn-hw/main/hardware/enclosure/view.png" alt="Capricorn: a 7.5-inch e-ink tutor on a folding desk dock" width="420">
+  <img src="https://raw.githubusercontent.com/meet-aule/aule-hw/main/hardware/enclosure/view.png" alt="Design render of Aule's prototype e-ink device and desk dock" width="420">
 </p>
 
-Every child deserves a patient tutor. **Capricorn** is one you can inspect, build and run yourself: a calm e-ink device that listens and talks, firmware on open standards, a server you can host, and an app for the family. No feed, no ads, no glowing screen.
+The hardware repository contains the [board and fabrication files](https://github.com/meet-aule/aule-hw/tree/main/hardware),
+[bill of materials](https://github.com/meet-aule/aule-hw/blob/main/bom/README.md)
+and [enclosure and assembly guide](https://github.com/meet-aule/aule-hw/blob/main/hardware/enclosure/README.md).
 
-| Repository | What you'll find |
-|---|---|
-| [capricorn-hw](https://github.com/meet-aule/capricorn-hw) | ESP32-S3 board, 7.5" e-ink touch display, voice with echo cancellation, hardware mic mute. KiCad 10, JLCPCB-ready files, 3D-printable dock |
-| [capricorn-fw](https://github.com/meet-aule/capricorn-fw) | ESP32-S3 firmware built on [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) with a [LiveKit](https://livekit.io) transport. Builds on every commit |
-| [capricorn-sw](https://github.com/meet-aule/capricorn-sw) | Self-hosted server: LiveKit Agents voice tutor, device activation and updates, family API |
-| [capricorn-app](https://github.com/meet-aule/capricorn-app) | Family app: setup over Bluetooth, progress, privacy controls |
+## Contribute
 
-### For builders
+Build reports, reproducible bug reports and small, focused pull requests are
+welcome in English or Spanish. Read the [contribution guide](https://github.com/meet-aule/.github/blob/main/CONTRIBUTING.md)
+and open issues in the repository responsible for that component.
 
-1. **Order the board.** Gerbers, BOM and placement files are ready for JLCPCB: about US$66 per assembled board in a batch of five ([BOM](https://github.com/meet-aule/capricorn-hw/blob/main/bom/README.md)).
-2. **Print the dock.** Seven PETG parts, about 13.5 hours ([enclosure](https://github.com/meet-aule/capricorn-hw/blob/main/hardware/enclosure/README.md)).
-3. **Flash the firmware** from the [CI builds](https://github.com/meet-aule/capricorn-fw/actions). It connects to the [server](https://github.com/meet-aule/capricorn-sw), which is not live yet; browser flashing is on the way too.
-4. **Tell us how it went.** Capricorn is a prototype; your build report is the most useful contribution there is.
+## Safety and privacy
 
-### Children first
+Parental consent, safety checks that fail closed and a hardware microphone mute
+are part of Aule's design. Children's data must not be used to train models.
+Report security or privacy problems privately to **admin@meetaule.com**; see the
+[security policy](https://github.com/meet-aule/.github/blob/main/SECURITY.md).
+Never include a child's data, recordings or credentials in a public issue.
 
-A hardware microphone mute the firmware cannot override. Parental consent. Children's data is never used to train models. Report privacy or security problems to admin@meetaule.com ([policy](https://github.com/meet-aule/.github/blob/main/SECURITY.md)).
-
-Made in Lima, Peru · [meetaule.com](https://meetaule.com)
+[meetaule.com](https://meetaule.com) · [Server documentation](https://github.com/meet-aule/aule-sw#readme)

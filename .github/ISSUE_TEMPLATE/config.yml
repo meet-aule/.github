@@ -3,6 +3,6 @@ contact_links:
   - name: Privacy or security report
     url: mailto:admin@meetaule.com
     about: Report privacy or security problems privately by email. Never post device IDs, MAC addresses or recordings in a public issue.
-  - name: Capricorn repositories
+  - name: Aule repositories
     url: https://github.com/meet-aule
     about: Hardware, firmware, server and app each have their own issues. Pick the one your report belongs to.

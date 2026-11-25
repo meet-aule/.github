@@ -1,6 +1,6 @@
 # Security and privacy policy
 
-Capricorn is used by children, so we treat privacy problems as security problems.
+Aule is used by children, so we treat privacy problems as security problems.
 
 ## Reporting
 
@@ -10,9 +10,9 @@ We acknowledge reports within 3 working days and keep you updated until the prob
 
 ## In scope
 
-- [capricorn-fw](https://github.com/meet-aule/capricorn-fw): anything that sends audio or identifiers without the user's intent, bypasses the hardware microphone mute, or weakens updates or device credentials.
-- [capricorn-sw](https://github.com/meet-aule/capricorn-sw): access to another family's data or a child's audio, account takeover, token leaks.
-- [capricorn-app](https://github.com/meet-aule/capricorn-app): exposure of a child's data on the phone or in transit.
-- [capricorn-hw](https://github.com/meet-aule/capricorn-hw): designs that could hurt a child: battery, heat, small parts, sharp edges.
+- [aule-fw](https://github.com/meet-aule/aule-fw): anything that sends audio or identifiers without the user's intent, bypasses the hardware microphone mute, or weakens updates or device credentials.
+- [aule-sw](https://github.com/meet-aule/aule-sw): access to another family's data or a child's audio, account takeover, token leaks.
+- [aule-app](https://github.com/meet-aule/aule-app): exposure of a child's data on the phone or in transit.
+- [aule-hw](https://github.com/meet-aule/aule-hw): designs that could hurt a child: battery, heat, small parts, sharp edges.
 
-Problems in [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) or [LiveKit](https://github.com/livekit) that are not specific to Capricorn should also be reported to those projects.
+Problems in [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) or [LiveKit](https://github.com/livekit) that are not specific to Aule should also be reported to those projects.
