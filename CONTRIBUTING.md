@@ -1,14 +1,14 @@
-# Contributing to Capricorn
+# Contributing to Aule
 
-Capricorn is the open-source AI tutor for children: [hardware](https://github.com/meet-aule/capricorn-hw), [firmware](https://github.com/meet-aule/capricorn-fw), [server](https://github.com/meet-aule/capricorn-sw) and a [family app](https://github.com/meet-aule/capricorn-app). Contributions are welcome in English or Spanish.
+Aule is the open-source AI tutor for children: [hardware](https://github.com/meet-aule/aule-hw), [firmware](https://github.com/meet-aule/aule-fw), [server](https://github.com/meet-aule/aule-sw) and a [family app](https://github.com/meet-aule/aule-app). Contributions are welcome in English or Spanish.
 
 ## How to help
 
-- **Build one and tell us.** Reports from real builds (what worked, what did not, measurements, photos) are the most valuable contribution while Capricorn is a prototype.
+- **Build one and tell us.** Reports from real builds (what worked, what did not, measurements, photos) are the most valuable contribution while Aule is a prototype.
 - **Report bugs and ideas** with the issue forms of the repository they belong to.
 - **Send pull requests.** Small fixes can go straight to a pull request; for bigger changes, open an issue first so we agree on the approach.
 
-Each repository may have its own guide with specifics (for example, [capricorn-hw's](https://github.com/meet-aule/capricorn-hw/blob/main/CONTRIBUTING.md)).
+Each repository may have its own guide with specifics (for example, [aule-hw's](https://github.com/meet-aule/aule-hw/blob/main/CONTRIBUTING.md)).
 
 ## Ground rules
 
